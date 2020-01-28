@@ -1,93 +1,17 @@
 package model;
 
-import java.time.LocalDate;
+//Import the class Booking from the package services (services.package)
 
-import services.Booking;
+//import the package for Local date and time (java --> time --> LocalDate)
 
-public class Hotel extends Booking {
+//Create a public class named Hotel which extends the class Booking
 
+	//Create private data members named noOfPerson and rates of type Integer, roomType and occupancy of type String, and fromDate and toDate of type LocalDate
 	
-	private int noOfPersons;
-	private String roomType;
-	private int rates;
-	private String occupancy;
-	private LocalDate fromdate;
-	private LocalDate todate;
-	
-	
-	public Hotel(int noOfPersons, String roomType, int rates,String occupancy,LocalDate fromdate,LocalDate todate) {
-		this.noOfPersons=noOfPersons;
-		this.roomType=roomType;
-		this.rates=rates;
-		this.occupancy=occupancy;
-		this.fromdate=fromdate;
-		this.todate=todate;
-		
-	}
+	//Create a constructor with six parameters
+	//In the order noOfPersons, roomType, rates, occupancy, fromDate, toDate
+
+		//Assign the appropriate values. Use the 'this' keyword
 
 
-	public int getNoOfPersons() {
-		return noOfPersons;
-	}
-
-
-	public void setNoOfPersons(int noOfPersons) {
-		this.noOfPersons = noOfPersons;
-	}
-
-
-	public String getRoomType() {
-		return roomType;
-	}
-
-
-	public void setRoomType(String roomType) {
-		this.roomType = roomType;
-	}
-
-
-	public int getRates() {
-		return rates;
-	}
-
-
-	public void setRates(int rates) {
-		this.rates = rates;
-	}
-
-
-	public String getOccupancy() {
-		return occupancy;
-	}
-
-
-	public void setOccupancy(String occupancy) {
-		this.occupancy = occupancy;
-	}
-
-
-	public LocalDate getFromdate() {
-		return fromdate;
-	}
-
-
-	public void setFromdate(LocalDate fromdate) {
-		this.fromdate = fromdate;
-	}
-
-
-	public LocalDate getTodate() {
-		return todate;
-	}
-
-
-	public void setTodate(LocalDate todate) {
-		this.todate = todate;
-	}
-
-
-
-
-	
-	
-}
+	//Fill in the appropriate getters and setters method. Do the math and calculte if all the variables have their corrresponding getter and setter.

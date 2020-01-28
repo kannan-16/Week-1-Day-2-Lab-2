@@ -10,10 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Hotel;
-import services.FareCalculator;
-
-
+//Uncomment the below two lines
+//import model.Hotel;
+//import services.FareCalculator;
 
 
 @WebServlet(urlPatterns={"/hotel"})
@@ -31,6 +30,8 @@ public class HotelController extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//Uncomment the below lines
+		/*
 		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
 		String roomtype=request.getParameter("roomtype");
 		String occupancy=request.getParameter("occupancy");
@@ -64,7 +65,7 @@ public class HotelController extends HttpServlet {
 		request.setAttribute("hotelfare", rate);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 		dispatcher.forward(request, response);
-	
+*/	
 	}
 	
 }

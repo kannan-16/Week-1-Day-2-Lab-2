@@ -1,58 +1,18 @@
 package model;
 
-import java.time.LocalDate;
+//Import the class Booking from the package services (services.package)
 
-import services.Booking;
+//import the package for Local date and time (java --> time --> LocalDate)
 
-public class Flight extends Booking{
+//Create a public class named Flight which extends the class Booking
 
+	//Create private data members named noOfPerson, rates of type Integer, classType of type String, and date of type LocalDate
 	
+	//Create a constructor with four parameters
+	//In the order noOfPerson, rates, classType, date
 	
-	private int noOfPersons;
-	private String classType;
-	private int rates;
-	private LocalDate date;
+		//Assign the appropriate values. Use the 'this' keyword
+
+		
+	//Fill in the appropriate getters and setters method. Do the math and calculte if all the variables have their corrresponding getter and setter.
 	
-	public Flight(int noOfPersons, int rates, String busType, LocalDate date) {
-	
-		this.noOfPersons=noOfPersons;
-		this.rates=rates;
-		this.classType=busType;
-		this.date=date;
-	}
-
-	public int getNoOfPersons() {
-		return noOfPersons;
-	}
-
-	public LocalDate getDate() {
-		return date;
-	}
-
-	public void setDate(LocalDate date) {
-		this.date = date;
-	}
-
-	public void setNoOfPersons(int noOfPersons) {
-		this.noOfPersons = noOfPersons;
-	}
-
-
-
-	public String getClassType() {
-		return classType;
-	}
-
-	public void setClassType(String classType) {
-		this.classType = classType;
-	}
-
-	public int getRates() {
-		return rates;
-	}
-
-	public void setRates(int rates) {
-		this.rates = rates;
-	}
-
-}

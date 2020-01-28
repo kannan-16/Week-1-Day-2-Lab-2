@@ -1,14 +1,7 @@
 package services;
 
+//Create a class named Booking
 
-
-
-public class Booking {
-
-
-	public double booking(int noOfPersons,int rates) {
+	//Create a method named booking with two parameters noOfPerson and rates
 		
-		return noOfPersons*rates;
-		
-	}
-}
+		//return the product of noOfPersons and rates

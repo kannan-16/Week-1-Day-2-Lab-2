@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-import model.Train;
-import services.FareCalculator;
+//Uncomment the below two lines
+//import model.Train;
+//import services.FareCalculator;
 
 /**
  * Servlet implementation class TrainController
@@ -34,6 +34,7 @@ public class TrainController extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		/*
 		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
 		String berth=request.getParameter("berth");
 		String date=request.getParameter("start");
@@ -67,6 +68,7 @@ public class TrainController extends HttpServlet {
 		request.setAttribute("trainfare", trainfare);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 		dispatcher.forward(request, response);
+		*/
 	}
 
 }
